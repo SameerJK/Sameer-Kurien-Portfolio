@@ -1,0 +1,64 @@
+2: Project Design Writeup and Approval
+
+Dataset USA Energy, Census and GDP 2010-2014
+
+-Follow this as a guide to completing the project design writeup. The questions for each section are merely there to suggest what the baseline should cover; be sure to use detail as it will make the project much easier to approach as the class moves on.
+
+### Project Problem and Hypothesis
+
+   Tracking energy trends from population statistics, centered on the effect Rate of Natural Increase (pop) has on Total Energy Consumption by year. The problem being approached is to find what effect, if any, shifting state populations have on that state's energy usage. Finding the size of any possible effects could be potentially useful for energy suppliers and allocation. While I think electric energy production will be the most powerful predictor of population, I beleive that some states might be more strongly linked to other energy types.
+
+
+
+- What's the project about? What problem are you solving?
+- Where does this seem to reside as a machine learning problem? Are you predicting some continuous number, or predicting a binary value?
+- What kind of impact do you think it could have?
+- What do you think will have the most impact in predicting the value you are interested in solving for?
+
+### Datasets
+
+    The dataset, a compilation of three government sets, came from kaggle, with the creator providing a dictionary for the variables
+https://www.kaggle.com/lislejoem/us_energy_census_gdp_10-14
+
+    It consists of Energy Consumption, Production, Expenditures and average price for those four years, total and for biomass, coal, electric, geothermal, natural gas, hydropower, fossil, and lpg(liquid petroleum gas). Population data includes geographic markers, population estimates and changes such as birth, death and migration. Economic Data consists of GDP per quarter and average for ther year.
+
+- Description of data set available, at the field level.  (see table)
+- If from an API, include a sample return.  (this is usually included in API documentation!) (if doing this in markdown, use the JavaScript code tag)
+
+### Domain knowledge
+
+    My knowledge and experience when it comes to this project is technical and recreational, as I have never worked on any population or energy data on this scale. 
+    Most work that I've been able to find tends to be use the global population (broken down by country) and there is a fair bit of work looking at energy consumption compared to a nation's population. Population and energy consumption are on the rise globally, though the degree seems to vary greatly between nations.
+    
+- What experience do you already have around this area?
+- Does it relate or help inform the project in any way?
+- What other research efforts exist?
+    - Use a quick Google search to see what approaches others have made, or talk with your colleagues if it is work related about previous attempts at similar problems.
+    - This could even just be something like "the marketing team put together a forecast in excel that doesn't do well."
+    - Include a benchmark, how other models have performed, even if you are unsure what the metric means.
+
+### Project Concerns
+
+    While they all have consumption, not all of the energy types have the other variables, which limits their use as features. Another concern is that while the dataset is very broad (across states, lots of features) to plot across time it is relatively shallow (5 points, 4 when using changes). While it may be possible to get information for other years, it doesn't appear to accesible for the variables present in this dataset. Although inherently more informative than taking the energy measurements of the vast and varied US as a whole, in-state variance is a factor that does concern me (ex. NYS results need to account for NYC). It will also be interesting see the trend for the nation as a whole and which states are representative for certain factors. 
+
+
+- What questions do you have about your project?  What are you not sure you quite yet understand?  (The more honest you are about this, the easier your instructors can help)
+- What are the assumptions and caveats to the problem?
+    - What data do you not have access to but wish you had?
+    - What is already implied about the observations in your data set?  For example, if your primary data set is twitter data, it may not be representative of the whole sample.  (say, predicting who would win an election)
+- What are the risks to the project?
+    - What's the cost of your model being wrong?  (What's the benefit of your model being right?)
+    - Is any of the data incorrect? Could it be incorrect?
+
+### Outcomes
+
+ A significant correlation between any two energy and population features would be a "success" for this project, and a clear representation of such on a line plot would be the output most appealing to an audience. Ideally it will be able to identify which energy type is most strongly linked to population change across states. The model should not have to be overly complicated, as there are enough states that training and testing should be viable. If the project is a bust, the first move would be to look into acquiring more data from previous years and reevaluate the selected features.
+
+
+
+- What do you expect the output to look like?
+- What does your target audience expect the output to look like?
+- What gain do you expect from your most important feature on its own?
+- How complicated does your model have to be?
+- How successful does your project have to be in order to be considered a "success"?
+- What will you do if the project is a bust (this happens! but it shouldn't here)?
